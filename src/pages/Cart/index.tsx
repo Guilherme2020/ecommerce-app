@@ -1,5 +1,6 @@
 import React, {useMemo} from 'react';
 import FeatherIcon from 'react-native-vector-icons/Feather';
+import {AirbnbRating} from 'react-native-ratings';
 
 import {View} from 'react-native';
 
@@ -16,6 +17,7 @@ import {
   TotalContainer,
   ProductPrice,
   ProductQuantity,
+  ProductRating,
   ActionContainer,
   ActionButton,
   TotalProductsContainer,
@@ -27,17 +29,8 @@ import {useCart} from '../../hooks/cart';
 
 import formatValue from '../../utils/formatValue';
 
-// interface Product {
-//   id: string;
-//   title: string;
-//   image_url: string;
-//   price: number;
-//   quantity: number;
-// }
-
 const Cart: React.FC = () => {
   const {increment, decrement, products, removeCart} = useCart();
-  console.warn(products);
   function handleIncrement(id: string): void {
     increment(id);
     // TODO
@@ -50,18 +43,15 @@ const Cart: React.FC = () => {
     removeCart(item.id);
   }
   const cartTotal = useMemo(() => {
-    // TODO RETURN THE SUM OF THE QUANTITY OF THE PRODUCTS IN THE CART
     const total = products.reduce((accumulator, product: Product) => {
-      const productsSubtotal = product.price * product.quantity;
       const discount = product.price * (product.discount / 100);
-      const formatValue = product.price * product.quantity - discount;
-      return accumulator + formatValue;
+      const formatValueItem = product.price * product.quantity - discount;
+      return accumulator + formatValueItem;
     }, 0);
     return formatValue(total);
   }, [products]);
 
   const totalItensInCart = useMemo(() => {
-    // TODO RETURN THE SUM OF THE QUANTITY OF THE PRODUCTS IN THE CART
     const total = products.reduce((accumulator, product: Product) => {
       const productsQuantity = product.quantity;
       return accumulator + productsQuantity;
@@ -71,7 +61,6 @@ const Cart: React.FC = () => {
   function productValueWithDiscount(item: Product) {
     const discount = item.price * (item.discount / 100);
     return formatValue(item.price * item.quantity - discount);
-    // console.warn(discount);
   }
   function valueDiscount(item: Product) {
     const discount = item.price * (item.discount / 100);
@@ -94,7 +83,7 @@ const Cart: React.FC = () => {
                 <ProductTitle>{item.title}</ProductTitle>
                 <ProductPriceContainer>
                   <ProductSinglePrice>
-                    {formatValue(item.price)} {': Disconto='}
+                    {formatValue(item.price)} {': Desconto='}
                     {valueDiscount(item)}
                   </ProductSinglePrice>
 
@@ -106,6 +95,15 @@ const Cart: React.FC = () => {
                       {productValueWithDiscount(item)}
                     </ProductPrice>
                   </TotalContainer>
+                  <ProductRating>
+                    <AirbnbRating
+                      isDisabled={true}
+                      showRating={false}
+                      size={20}
+                      selectedColor={'#e83f5b'}
+                      defaultRating={item.rating_media}
+                    />
+                  </ProductRating>
                 </ProductPriceContainer>
               </ProductTitleContainer>
               <ActionContainer>

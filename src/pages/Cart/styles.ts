@@ -107,3 +107,10 @@ export const SubtotalValue = styled.Text`
   color: #fff;
   font-weight: bold;
 `;
+export const ProductRating = styled.View`
+  margin-top: 10%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+`;
