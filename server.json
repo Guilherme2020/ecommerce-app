@@ -2,53 +2,373 @@
   "products": [
     {
       "id": "123",
-      "title": "Nome do produto 01",
-      "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
+      "title": "Camisa Social",
+      "image_url": "https://i.pinimg.com/originals/d3/7f/a1/d37fa115bf35d0d48ff75afd9e58b79c.jpg",
+      "images": [
+        {
+          "id": 1,
+          "thumbnail_img": "https://i.pinimg.com/originals/ac/10/f4/ac10f44e3563a57972041e7745223826.jpg"
+        },
+        {
+          "id": 2,
+          "thumbnail_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR_7aX-6Gnkk6eqeWN_kih8UUVE28X9fvOezA&usqp=CAU"
+        },
+        {
+          "id": 3,
+          "thumbnail_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSi70JtFN_1O5QP0vJiI_hoFE4VQdCL30JXDw&usqp=CAU"
+        }
+      ],
       "price": 50,
       "discount": 2,
       "rating_media": 4,
-      "description": "lorem",
-      "reviews": "Um ótimo produto"
-     },
+      "description": "Camisa Social bem vista, ótimo tecido, resistente",
+      "reviews": [
+        {
+         "id": "123",
+         "comment": "'Um ótimo produto'"
+        },
+        {
+          "id": "1234",
+          "comment": "'Gostei muito do material'"
+        },
+        {
+          "id": "12345",
+          "comment": "'Gostei muito do desconto'"
+        }
+      ]
+    },
     {
       "id": "1234",
-      "title": "Nome do produto 02",
-      "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
+      "title": "Camisa Descolada",
+      "image_url": "https://images-americanas.b2w.io/produtos/01/00/img/1250773/7/1250773701_1GG.jpg",
+      "images": [
+        {
+          "id": 1,
+          "thumbnail_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRHwlQ-fH2nl1Z9nGTrOjgjzzGRz624sGMO_Q&usqp=CAU "
+        },
+        {
+          "id": 2,
+          "thumbnail_img": "https://brciclismo.com.br/wp-content/uploads/2018/11/camisa-freeforce.jpg"
+        },
+        {
+          "id": 3,
+          "thumbnail_img": "https://www.dhresource.com/0x0/f2/albu/g9/M00/4E/D4/rBVaVVyYp2yAXugOAAHbEMgmR_o182.jpg"
+        }
+      ],
       "price": 60,
       "discount": 2,
       "rating_media": 4,
-      "description": "lorem",
-      "reviews": "Um ótimo produto"
+      "description": "Camisa jovial, para pessoas que buscam mais liberdade",
+      "reviews": [
+        {
+         "id": "12326984",
+         "comment": "'Um ótimo produto'"
+        },
+        {
+          "id": "1234",
+          "comment": "'Gostei muito do material'"
+        },
+        {
+          "id": "12345",
+          "comment": "'Gostei muito do desconto'"
+        }
+      ]
     },
     {
       "id": "12345",
-      "title": "Nome do produto 03",
-      "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
+      "title": "Cadeira Gamer MX1 Giratoria Mymax",
+      "image_url": "https://www.extra-imagens.com.br/Moveis/escritorio/cadeira-gamer/15450506/1398411992/cadeira-gamer-mx1-giratoria-mymax-15450506.jpg",
+      "images": [
+        {
+          "id": 1,
+          "thumbnail_img": "https://static.carrefour.com.br/medias/sys_master/images/images/h99/h46/h00/h00/13579940069406.jpg"
+        },
+        {
+          "id": 2,
+          "thumbnail_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSnQZi9E2ltWaJfqWM_1MMi7bagT-a-EPJyQg&usqp=CAU"
+        },
+        {
+          "id": 3,
+          "thumbnail_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTzucb7_iaPGatlXRPH5zp7ZMUa2Rclvci16g&usqp=CAU"
+        }
+      ],
       "price": 70,
       "discount": 2,
       "rating_media": 4,
-      "description": "lorem",
-      "reviews": "Um ótimo produto"
+      "description": "Uma ótima cadeira, para pessoas que trabalham remotamente",
+      "reviews": [
+        {
+         "id": "153",
+         "comment": "'Um ótimo produto'"
+        },
+        {
+          "id": "1234",
+          "comment": "'Gostei muito do material'"
+        },
+        {
+          "id": "12345",
+          "comment": "'Gostei muito do desconto'"
+        }
+      ]
     },
     {
       "id": "123456",
-      "title": "Nome do produto 04",
-      "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
+      "title": "Mesa Gamer",
+      "image_url": "https://http2.mlstatic.com/deskmod-mesa-gamer-p-computador-D_NQ_NP_937888-MLB26021966299_092017-F.jpg",
+      "images": [
+        {
+          "id": 1,
+          "thumbnail_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTsmfc5cVK-AVkFukBkFrfueaAmdGXsnAUDgA&usqp=CAU"
+        },
+        {
+          "id": 2,
+          "thumbnail_img": "https://images.madeiramadeira.com.br/product/images/27045614-mesa-gamer-idl-xp-500-siena-moveis-7898534013527-1_zoom-1500x1500.jpg"
+        },
+        {
+          "id": 3,
+          "thumbnail_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTmAmd9Mezju5egZ3kgT4gC5taOCGiQsuNVMg&usqp=CAU"
+        }
+      ],
       "price": 80,
       "discount": 2,
       "rating_media": 4,
-      "description": "lorem",
-      "reviews": "Um ótimo produto"
+      "description": "Uma mesa gamer bem espaçosa, bom para quem gosta de estudar e jogar",
+      "reviews": [
+        {
+         "id": "173",
+         "comment": "'Um ótimo produto'"
+        },
+        {
+          "id": "1234",
+          "comment": "'Gostei muito do material'"
+        },
+        {
+          "id": "12345",
+          "comment": "'Gostei muito do desconto'"
+        }
+      ]
     },
     {
       "id": "123457",
-      "title": "Nome do produto 05",
-      "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
+      "title": "Monitor Game",
+      "image_url": "https://images0.kabum.com.br/produtos/fotos/96480/monitor-gamer-acer-led-27-widescreen-full-hd-hdmi-vga-freesync-som-integrado-1ms-kg271-bmiix_monitor-gamer-acer-led-27-widescreen-full-hd-hdmi-vga-freesync-som-integrado-1ms-kg271-bmiix_1559652685_g.jpg",
+      "images": [
+        {
+          "id": 1,
+          "thumbnail_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTr9zmGxYPXa_fmcdXs5ZP_HB7SRbmQXTogsw&usqp=CAU"
+        },
+        {
+          "id": 2,
+          "thumbnail_img": "https://29028l.ha.azioncdn.net/img/2018/05/produto/93458/19/large/monitor-gamer-lg-29-full-hd-ultrawide-29um69g-preto.jpg"
+        },
+        {
+          "id": 3,
+          "thumbnail_img": "https://images7.kabum.com.br/produtos/fotos/103167/monitor-games-asus-49-super-ultrawide-curvo-hdmi-display-port-freesync-2-hdr-144-hz-xg49vq_monitor-games-asus-49-super-ultrawide-curvo-hdmi-display-port-freesync-2-hdr-144-hz-xg49vq_1565705830_g.jpg"
+        }
+      ],
       "price": 80,
       "discount": 4,
       "rating_media": 4,
       "description": "lorem ipsum dolor",
-      "reviews": "Um ótimo produto"
+      "reviews": [
+        {
+         "id": "1203",
+         "comment": "'Um ótimo produto'"
+        },
+        {
+          "id": "1234",
+          "comment": "'Gostei muito do material'"
+        },
+        {
+          "id": "12345",
+          "comment": "'Gostei muito do desconto'"
+        }
+      ]
+    },
+    {
+      "id": "1234578",
+      "title": "Macbook Pro",
+      "image_url": "https://www.mastertronic.com.br/media/catalog/product/cache/1/image/650x650/9df78eab33525d08d6e5fb8d27136e95/m/b/mbp13touch-space-gallery2-201807_geo_us-cutout_3_1.png",
+      "images": [
+        {
+          "id": 1,
+          "thumbnail_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSrCGT7aOQNc5VIK6Ts4O5DoApSrkOe51mZAQ&usqp=CAU"
+        },
+        {
+          "id": 2,
+          "thumbnail_img": "https://m.media-amazon.com/images/I/71YvImv3qBL.jpg"
+        },
+        {
+          "id": 3,
+          "thumbnail_img": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/HLXH2_AV2?wid=1144&hei=1144&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1590028444000"
+        }
+      ],
+      "price": 100000,
+      "discount": 4,
+      "rating_media": 4,
+      "description": "lorem ipsum dolor",
+      "reviews": [
+        {
+         "id": "123963",
+         "comment": "'Um ótimo produto, bem rápido'"
+        },
+        {
+          "id": "1234",
+          "comment": "'Gostei muito do material'"
+        },
+        {
+          "id": "12345",
+          "comment": "'Gostei muito do desconto'"
+        }
+      ]
+    },
+    {
+      "id": "123456789",
+      "title": "Camisa Social",
+      "image_url": "https://i.pinimg.com/originals/d3/7f/a1/d37fa115bf35d0d48ff75afd9e58b79c.jpg",
+      "images": [
+        {
+          "id": 1,
+          "thumbnail_img": "https://i.pinimg.com/originals/ac/10/f4/ac10f44e3563a57972041e7745223826.jpg"
+        },
+        {
+          "id": 2,
+          "thumbnail_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR_7aX-6Gnkk6eqeWN_kih8UUVE28X9fvOezA&usqp=CAU"
+        },
+        {
+          "id": 3,
+          "thumbnail_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSi70JtFN_1O5QP0vJiI_hoFE4VQdCL30JXDw&usqp=CAU"
+        }
+      ],
+      "price": 50,
+      "discount": 2,
+      "rating_media": 4,
+      "description": "Camisa Social bem vista, ótimo tecido, resistente",
+      "reviews": [
+        {
+         "id": "123698",
+         "comment": "'Um ótimo produto'"
+        },
+        {
+          "id": "1234",
+          "comment": "'Gostei muito do material'"
+        },
+        {
+          "id": "12345",
+          "comment": "'Gostei muito do desconto'"
+        }
+      ]
+    },
+    {
+      "id": "12345678910",
+      "title": "Mesa Gamer",
+      "image_url": "https://http2.mlstatic.com/deskmod-mesa-gamer-p-computador-D_NQ_NP_937888-MLB26021966299_092017-F.jpg",
+      "images": [
+        {
+          "id": 1,
+          "thumbnail_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTsmfc5cVK-AVkFukBkFrfueaAmdGXsnAUDgA&usqp=CAU"
+        },
+        {
+          "id": 2,
+          "thumbnail_img": "https://images.madeiramadeira.com.br/product/images/27045614-mesa-gamer-idl-xp-500-siena-moveis-7898534013527-1_zoom-1500x1500.jpg"
+        },
+        {
+          "id": 3,
+          "thumbnail_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTmAmd9Mezju5egZ3kgT4gC5taOCGiQsuNVMg&usqp=CAU"
+        }
+      ],
+      "price": 80,
+      "discount": 2,
+      "rating_media": 4,
+      "description": "Uma mesa gamer bem espaçosa, bom para quem gosta de estudar e jogar",
+      "reviews": [
+        {
+         "id": "123547",
+         "comment": "'Um ótimo produto'"
+        },
+        {
+          "id": "1234",
+          "comment": "'Gostei muito do material'"
+        },
+        {
+          "id": "12345",
+          "comment": "'Gostei muito do desconto'"
+        }
+      ]
+    },
+    {
+      "id": "196",
+      "title": "Cadeira Gamer MX1 Giratoria Mymax",
+      "image_url": "https://www.extra-imagens.com.br/Moveis/escritorio/cadeira-gamer/15450506/1398411992/cadeira-gamer-mx1-giratoria-mymax-15450506.jpg",
+      "images": [
+        {
+          "id": 1,
+          "thumbnail_img": "https://static.carrefour.com.br/medias/sys_master/images/images/h99/h46/h00/h00/13579940069406.jpg"
+        },
+        {
+          "id": 2,
+          "thumbnail_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSnQZi9E2ltWaJfqWM_1MMi7bagT-a-EPJyQg&usqp=CAU"
+        },
+        {
+          "id": 3,
+          "thumbnail_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTzucb7_iaPGatlXRPH5zp7ZMUa2Rclvci16g&usqp=CAU"
+        }
+      ],
+      "price": 70,
+      "discount": 2,
+      "rating_media": 4,
+      "description": "Uma ótima cadeira, para pessoas que trabalham remotamente",
+      "reviews": [
+        {
+         "id": "332",
+         "comment": "'Um ótimo produto'"
+        },
+        {
+          "id": "1234",
+          "comment": "'Gostei muito do material'"
+        },
+        {
+          "id": "12345",
+          "comment": "'Gostei muito do desconto'"
+        }
+      ]
+    },
+    {
+      "id": "156",
+      "title": "Cadeira Gamer MX1 Giratoria Mymax",
+      "image_url": "https://www.extra-imagens.com.br/Moveis/escritorio/cadeira-gamer/15450506/1398411992/cadeira-gamer-mx1-giratoria-mymax-15450506.jpg",
+      "images": [
+        {
+          "id": 1,
+          "thumbnail_img": "https://static.carrefour.com.br/medias/sys_master/images/images/h99/h46/h00/h00/13579940069406.jpg"
+        },
+        {
+          "id": 2,
+          "thumbnail_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSnQZi9E2ltWaJfqWM_1MMi7bagT-a-EPJyQg&usqp=CAU"
+        },
+        {
+          "id": 3,
+          "thumbnail_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTzucb7_iaPGatlXRPH5zp7ZMUa2Rclvci16g&usqp=CAU"
+        }
+      ],
+      "price": 70,
+      "discount": 2,
+      "rating_media": 4,
+      "description": "Uma ótima cadeira, para pessoas que trabalham remotamente",
+      "reviews": [
+        {
+         "id": "14147",
+         "comment": "'Um ótimo produto'"
+        },
+        {
+          "id": "1234",
+          "comment": "'Gostei muito do material'"
+        },
+        {
+          "id": "12345",
+          "comment": "'Gostei muito do desconto'"
+        }
+      ]
     }
   ]
 }
