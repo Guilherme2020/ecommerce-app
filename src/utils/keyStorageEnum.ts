@@ -1,5 +1,5 @@
 enum keyStorageEnum {
-  products = '@GoMarketplace:products',
+  products = '@ecommerce:products',
 }
 
 export default keyStorageEnum;

@@ -5,6 +5,7 @@ import {Image} from 'react-native';
 
 import FeatherIcon from 'react-native-vector-icons/Feather';
 import Dashboard from '../pages/Dashboard';
+import Cart from '../pages/Cart';
 const App = createStackNavigator();
 
 const AppRoutes: React.FC = () => (
@@ -23,10 +24,10 @@ const AppRoutes: React.FC = () => (
       name="Dashboard"
       component={Dashboard}
     />
-    {/* <App.Screen
+    <App.Screen
       options={{
         headerTransparent: true,
-        headerTitle: () => <Image source={Logo} />,
+        // headerTitle: () => <Image source={Logo} />,
         headerBackTitleVisible: false,
         headerLeftContainerStyle: {
           marginLeft: 20,
@@ -36,7 +37,7 @@ const AppRoutes: React.FC = () => (
       }}
       name="Cart"
       component={Cart}
-    /> */}
+    />
   </App.Navigator>
 );
 

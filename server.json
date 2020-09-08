@@ -4,25 +4,51 @@
       "id": "123",
       "title": "Nome do produto 01",
       "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
-      "price": 50
-    },
+      "price": 50,
+      "discount": 2,
+      "rating_media": 4,
+      "description": "lorem",
+      "reviews": "Um ótimo produto"
+     },
     {
       "id": "1234",
       "title": "Nome do produto 02",
       "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
-      "price": 60
+      "price": 60,
+      "discount": 2,
+      "rating_media": 4,
+      "description": "lorem",
+      "reviews": "Um ótimo produto"
     },
     {
       "id": "12345",
       "title": "Nome do produto 03",
       "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
-      "price": 70
+      "price": 70,
+      "discount": 2,
+      "rating_media": 4,
+      "description": "lorem",
+      "reviews": "Um ótimo produto"
     },
     {
       "id": "123456",
       "title": "Nome do produto 04",
       "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
-      "price": 80
+      "price": 80,
+      "discount": 2,
+      "rating_media": 4,
+      "description": "lorem",
+      "reviews": "Um ótimo produto"
+    },
+    {
+      "id": "123457",
+      "title": "Nome do produto 05",
+      "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
+      "price": 80,
+      "discount": 4,
+      "rating_media": 4,
+      "description": "lorem ipsum dolor",
+      "reviews": "Um ótimo produto"
     }
   ]
 }
