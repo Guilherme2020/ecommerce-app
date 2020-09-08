@@ -7,6 +7,6 @@ export interface Product {
   discount: number;
   rating_media: number;
   description: string;
-  reviews: string;
+  reviews: Array<[]>;
   images: Array<[]>;
 }
