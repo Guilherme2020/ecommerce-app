@@ -6,6 +6,11 @@ interface Product {
   title: string;
   image_url: string;
   price: number;
+  quantity: number;
+  rating_media: number;
+  discount: number;
+  description: string;
+  reviews: string;
 }
 
 export const Container = styled.SafeAreaView`
@@ -23,13 +28,13 @@ export const ProductContainer = styled.View`
 export const ProductList = styled(
   FlatList as new () => FlatList<Product>,
 ).attrs({
-  numColumns: 2,
+  numColumns: 1,
 })`
   flex: 1;
   padding: 0 10px;
 `;
 
-export const Product = styled.View`
+export const ProductC = styled.TouchableOpacity`
   background: #fff;
   padding: 16px 16px;
   border-radius: 5px;
@@ -62,4 +67,57 @@ export const ProductPrice = styled.Text`
   color: #e83f5b;
 `;
 
+export const ProductDiscount = styled.Text`
+  font-weight: bold;
+  font-size: 16px;
+  color: #7cb47e;
+`;
+
+export const ProductRating = styled.View`
+  flex: 1;
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+`;
 export const ProductButton = styled.TouchableOpacity``;
+
+export const AddToCartContainer = styled.View`
+  position: absolute;
+  bottom: 0px;
+
+  flex-direction: row;
+  background: yellow;
+  width: 100%;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const AddToCartButton = styled.TouchableOpacity`
+  flex-direction: row;
+  background: #e83f5b;
+  margin-top: 10px;
+  flex: 1;
+  display: flex;
+  width: 100%;
+  padding: 0 20px;
+
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const AddToCartText = styled.Text`
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  /* margin-left: 15px; */
+  padding: 10px 20px;
+
+  flex: 1;
+  /* margin-right: auto; */
+`;
