@@ -1,21 +1,35 @@
 import styled from 'styled-components/native';
 import {FlatList} from 'react-native';
+import {Product} from '../../interfaces/Product';
+// interface Product {
+//   id: string;
+//   title: string;
+//   image_url: string;
+//   price: number;
+//   quantity: number;
+//   rating_media: number;
+//   discount: number;
+//   description: string;
+//   reviews: string;
+// }
 
-interface Product {
-  id: string;
-  title: string;
-  image_url: string;
-  price: number;
-  quantity: number;
-  rating_media: number;
-  discount: number;
-  description: string;
-  reviews: string;
-}
-
-export const Container = styled.SafeAreaView`
+export const Container = styled.View`
   flex: 1;
   align-items: center;
+`;
+
+export const Header = styled.View`
+  padding: 60px 24px 60px;
+  background: #c72828;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+`;
+export const FilterContainer = styled.View`
+  padding: 0 24px;
+  margin-top: -28px;
 `;
 
 export const ProductContainer = styled.View`
@@ -39,7 +53,7 @@ export const ProductC = styled.TouchableOpacity`
   padding: 16px 16px;
   border-radius: 5px;
   margin: 8px;
-  flex: 1;
+  /* flex: 1; */
 `;
 
 export const ProductImage = styled.Image`
