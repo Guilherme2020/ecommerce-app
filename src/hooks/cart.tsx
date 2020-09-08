@@ -5,21 +5,25 @@ import React, {
   useContext,
   useEffect,
 } from 'react';
-
+import {Product} from '../interfaces/Product';
 import keyStorageEnum from '../utils/keyStorageEnum';
 import AsyncStorage from '@react-native-community/async-storage';
 
-interface Product {
-  id: string;
-  title: string;
-  image_url: string;
-  price: number;
-  quantity: number;
-}
+// interface Product {
+//   id: string;
+//   title: string;
+//   image_url: string;
+//   price: number;
+//   quantity: number;
+//   discount: number;
+//   rating_media: number;
+//   description: string;
+//   reviews: string;
+// }
 
 interface CartContext {
   products: Product[];
-  addToCart(item: Omit<Product, 'quantity'>): void;
+  addToCart(item: Product): void;
   increment(id: string): void;
   decrement(id: string): void;
   removeCart(id: string): void;
@@ -47,24 +51,31 @@ const CartProvider: React.FC = ({children}) => {
     async (product) => {
       const productExists = products.find((p) => p.id === product.id);
       if (productExists) {
+        console.warn('if');
         setProducts(
           products.map((p) =>
             p.id === product.id ? {...product, quantity: p.quantity + 1} : p,
           ),
         );
+        setProducts(products);
+        await AsyncStorage.setItem(
+          keyStorageEnum.products,
+          JSON.stringify(products),
+        );
       } else {
-        setProducts([
+        const value = [
           ...products,
           {
             ...product,
             quantity: 1,
           },
-        ]);
+        ];
+        setProducts(value);
+        await AsyncStorage.setItem(
+          keyStorageEnum.products,
+          JSON.stringify(value),
+        );
       }
-      await AsyncStorage.setItem(
-        keyStorageEnum.products,
-        JSON.stringify(products),
-      );
     },
     [products],
   );
