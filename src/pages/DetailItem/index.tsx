@@ -31,6 +31,10 @@ import {
   ButtonText,
   IconContainer,
   CommentContainer,
+  ContainerListImages,
+  ViewImage,
+  ImagesProducts,
+  ViewImagesProducts,
 } from './styles';
 
 interface Params {
@@ -40,7 +44,6 @@ interface Params {
 const DetailItem: React.FC = () => {
   const [productData, setProductData] = useState({} as Product);
   const {addToCart, removeCart, products} = useCart();
-  const [textInfo, setTextInfo] = useState('Adicionar Item');
   const navigation = useNavigation();
   const route = useRoute();
 
@@ -160,41 +163,23 @@ const DetailItem: React.FC = () => {
               <View>
                 <Title>Outras Imagens</Title>
               </View>
-              <View style={{height: 150, flexDirection: 'row'}}>
+              <ContainerListImages>
                 <FlatList
                   data={productData && productData.images}
                   keyExtractor={(item) => String(item.id)}
                   horizontal
                   showsHorizontalScrollIndicator={false}
-                  // ListFooterComponent={() => this.addAditional()}
                   renderItem={({item}) => (
                     <View style={{flexDirection: 'row'}}>
-                      <View
-                        style={{
-                          alignItems: 'center',
-
-                          justifyContent: 'center',
-                        }}>
-                        <View
-                          style={{
-                            height: 115,
-                          }}>
-                          <Image
-                            style={{
-                              width: 85,
-                              height: 85,
-                              borderRadius: 85,
-                              overflow: 'hidden',
-                              // AdditionalStyle.imageBackgroundStyle
-                            }}
-                            source={{uri: item.thumbnail_img}}
-                          />
-                        </View>
-                      </View>
+                      <ViewImage>
+                        <ViewImagesProducts>
+                          <ImagesProducts source={{uri: item.thumbnail_img}} />
+                        </ViewImagesProducts>
+                      </ViewImage>
                     </View>
                   )}
                 />
-              </View>
+              </ContainerListImages>
             </ProductContent>
           </ProductC>
         </ProductContainer>

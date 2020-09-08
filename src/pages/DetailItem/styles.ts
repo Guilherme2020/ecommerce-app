@@ -184,3 +184,23 @@ export const ProductRating = styled.View`
 export const CommentContainer = styled.View`
   display: flex;
 `;
+
+export const ContainerListImages = styled.View`
+  height: 150px;
+  flex-direction: row;
+`;
+
+export const ViewImage = styled.View`
+  align-items: center;
+
+  justify-content: center;
+`;
+export const ViewImagesProducts = styled.View`
+  height: 115;
+`;
+export const ImagesProducts = styled.Image`
+  width: 85px;
+  height: 85px;
+  border-radius: 85px;
+  overflow: hidden;
+`;
