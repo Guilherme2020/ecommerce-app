@@ -4,6 +4,7 @@
 - ⚛️ **React Native** —  Mobile framework that provides an efficient way to create native applications for Android and iOS.
     - Use of ⚛️ React Hooks.
     - Use of ⚛️ Context Api.
+    - Use of eslint.
     - Use of axios for communication with api.
     - Use of the styled-coponents library.
     - Use of the react-navigation library for navigation between screens.
