@@ -78,7 +78,7 @@ Run the lines below to launch the application on your physical device or emulato
 
 <p align="center">
   <a href="https://opensource.org/licenses/MIT">
-    <img src="screenshots/result-filter.png" alt="Home App">
+    <img src="screenshots/result-flter.png" alt="Home App">
   </a>
 </p>
 <br/>
