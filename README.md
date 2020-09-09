@@ -48,7 +48,7 @@ Run the lines below to launch the application on your physical device or emulato
    - If you already have it in your shopping cart, you will have the remove button
     cart
    - You will see comments about that product from other users
- -  Shopping Cart Screen
+ - Shopping Cart Screen
    - The user will see all items added to the shopping cart
    - Each item will have
    - Main product image
