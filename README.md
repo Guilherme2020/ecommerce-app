@@ -49,16 +49,16 @@ Run the lines below to launch the application on your physical device or emulato
     cart
    - You will see comments about that product from other users
  -  Shopping Cart Screen
-  - The user will see all items added to the shopping cart
-  - Each item will have
-  - Main product image
-  - Product's name
-  - Price of the product
-  - Discount
-  - Average ratings from those who consumed saw.
-  - Button to remove from cart
-  - There will be a sum of the total to pay in the footer (considering the
-  discounts for each product)
+   - The user will see all items added to the shopping cart
+   - Each item will have
+   - Main product image
+   - Product's name
+   - Price of the product
+   - Discount
+   - Average ratings from those who consumed saw.
+   - Button to remove from cart
+   - There will be a sum of the total to pay in the footer (considering the
+   discounts for each product)
 
 <p align="center">
   <a href="https://opensource.org/licenses/MIT">
