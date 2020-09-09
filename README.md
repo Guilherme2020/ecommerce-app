@@ -23,6 +23,42 @@ Run the lines below to launch the application on your physical device or emulato
     - As soon as the process is finished, the application will run on the device that was installed.
 
     - (if there is an error in the terminal referring to the project libraries, correct by synchronizing the project in android studio).
+## Features:
+
+ - Product Listing Screen
+   - You will be able to see the products in the store.
+   - Buy button (redirects to the shopping cart).
+   - Add to Shopping Cart button.
+   - If you already have it in your shopping cart, you will have the remove button
+   cart.
+   - There will be a filter by product name
+   - There will be ordering by price
+   - There will be pagination of the products (user will see a maximum of 10 products in
+   each page)
+   - When selecting a product the user will go to the Product details screen
+ - DetailOrder
+   - Other product pictures
+   - Product's name
+   - Product description
+   - Price of the product
+   - Discount (if any)
+   - Average ratings from those who consumed
+   - Buy button (redirects to the shopping cart)
+   - Add to Cart button
+   - If you already have it in your shopping cart, you will have the remove button
+    cart
+   - You will see comments about that product from other users
+ -  Shopping Cart Screen
+  - The user will see all items added to the shopping cart
+  - Each item will have
+  - Main product image
+  - Product's name
+  - Price of the product
+  - Discount
+  - Average ratings from those who consumed saw.
+  - Button to remove from cart
+  - There will be a sum of the total to pay in the footer (considering the
+  discounts for each product)
 
 <p align="center">
   <a href="https://opensource.org/licenses/MIT">
